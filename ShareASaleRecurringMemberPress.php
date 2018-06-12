@@ -31,9 +31,9 @@ function shareASaleTrackRecurring($txn){
 	$date_formatted = substr($date_formatted, 1); //This is the Formatted Date of the first Transaction
 
 	// Begin API CALL ------
-	$myMerchantID = '80230';
-	$APIToken = "XWk5nd6t8YCdrh7s";
-	$APISecretKey = "FRk9ei8b7NZqbu9jXWk5nd6t8YCdrh7s";
+	$myMerchantID = 'XXXX';
+	$APIToken = "XXXX";
+	$APISecretKey = "XXXX";
 	$myTimeStamp = gmdate(DATE_RFC1123);
 
 	$APIVersion = 2.8;
