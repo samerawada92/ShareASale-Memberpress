@@ -1,3 +1,4 @@
+<?php
 // ShareASale Recurring Transaction Tracking For MemberPress
 function shareASaleTrackRecurring($txn){
 
@@ -53,15 +54,6 @@ function shareASaleTrackRecurring($txn){
 	curl_setopt($ch, CURLOPT_HEADER, 0);
 
 	$returnResult = curl_exec($ch);
-
-	// Dump Data For Testing
-	var_dump($returnResult);
-	echo "<br/> <br/>";
-	var_dump($first_transaction_number);
-	echo "<br/> <br/>";
-	var_dump($date_formatted);
-	echo "<br/> <br/>";
-	var_dump($txn);
 
 	if ($returnResult) {
 		//parse HTTP Body to determine result of request
